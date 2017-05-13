@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        android:padding="@dimen/margin"
+        app:layout_heightPercent="100%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="0%"
+        app:layout_widthPercent="50%">
+
+        <TextView
+            android:id="@+id/lblTotalCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total with Credit Card: " />
+
+        <TextView
+            android:id="@+id/txtTotalSpentCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/lblTotalCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total with Cash: " />
+
+        <TextView
+            android:id="@+id/txtTotalSpentCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_margin="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total spent:" />
+
+        <TextView
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/txtTotalSpent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical"
+        android:padding="@dimen/margin"
+        app:layout_heightPercent="100%"
+        app:layout_marginLeftPercent="50%"
+        app:layout_marginTopPercent="0%"
+        app:layout_widthPercent="50%">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/checkCard"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/checkcard"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/checkCash"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/checkcash"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <com.blackcat.currencyedittext.CurrencyEditText
+            android:id="@+id/edtSpentValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone" />
+
+
+        <Button
+            android:id="@+id/btnSaveSpent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+    </LinearLayout>
+
+
+</android.support.percent.PercentFrameLayout>

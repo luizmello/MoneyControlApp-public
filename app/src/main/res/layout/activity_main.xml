@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="com.myniotech.moneycontrol.view.activity.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="0%"
+        app:layout_widthPercent="32%" />
+
+    <Button
+        android:id="@+id/openChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charts"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="34%"
+        app:layout_marginTopPercent="0%"
+        app:layout_widthPercent="32%" />
+
+    <Button
+        android:id="@+id/newSpent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Spent"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="66%"
+        app:layout_marginTopPercent="0%"
+        app:layout_widthPercent="32%" />
+
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        app:layout_heightPercent="88%"
+        app:layout_marginLeftPercent="0%"
+        app:layout_marginTopPercent="12%"
+        app:layout_widthPercent="100%" >
+
+    </FrameLayout>
+
+
+</android.support.percent.PercentFrameLayout>
