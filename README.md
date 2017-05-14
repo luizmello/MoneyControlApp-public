@@ -1,4 +1,7 @@
 # MoneyControlApp-public
+
+This project run on Android Studio 2.4, if you want to use other Android Studio version, you need to add Retrolambda or other Java 8 support. 
+
 Android App for training:  
 MVP Architecture  
 Dagger2  
